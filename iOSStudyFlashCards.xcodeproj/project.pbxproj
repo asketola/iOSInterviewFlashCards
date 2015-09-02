@@ -13,6 +13,7 @@
 		79FEAC0D1B96237900AA006C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79FEAC0C1B96237900AA006C /* Images.xcassets */; };
 		79FEAC101B96237900AA006C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79FEAC0E1B96237900AA006C /* LaunchScreen.xib */; };
 		79FEAC1C1B96237900AA006C /* iOSStudyFlashCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FEAC1B1B96237900AA006C /* iOSStudyFlashCardsTests.swift */; };
+		79FEAC261B962E1200AA006C /* Regular in Resources */ = {isa = PBXBuildFile; fileRef = 79FEAC251B962E1200AA006C /* Regular */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		79FEAC151B96237900AA006C /* iOSStudyFlashCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSStudyFlashCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79FEAC1A1B96237900AA006C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79FEAC1B1B96237900AA006C /* iOSStudyFlashCardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSStudyFlashCardsTests.swift; sourceTree = "<group>"; };
+		79FEAC251B962E1200AA006C /* Regular */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Regular; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				79FEAC071B96237800AA006C /* ViewController.swift */,
 				79FEAC091B96237900AA006C /* Main.storyboard */,
 				79FEAC0C1B96237900AA006C /* Images.xcassets */,
+				79FEAC251B962E1200AA006C /* Regular */,
 				79FEAC0E1B96237900AA006C /* LaunchScreen.xib */,
 				79FEAC031B96237800AA006C /* Supporting Files */,
 			);
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79FEAC0B1B96237900AA006C /* Main.storyboard in Resources */,
+				79FEAC261B962E1200AA006C /* Regular in Resources */,
 				79FEAC101B96237900AA006C /* LaunchScreen.xib in Resources */,
 				79FEAC0D1B96237900AA006C /* Images.xcassets in Resources */,
 			);
