@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="jaapokki-regular.ttf">
+            <string>JaapokkiRegular</string>
+            <string>JaapokkiRegular</string>
             <string>JaapokkiRegular</string>
             <string>JaapokkiRegular</string>
             <string>JaapokkiRegular</string>
@@ -32,7 +34,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSb-ak-L5k">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kSb-ak-L5k">
                                 <rect key="frame" x="16" y="114" width="276" height="145"/>
                                 <color key="backgroundColor" red="0.20392156862745098" green="0.58431372549019611" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="JaapokkiRegular" family="JaapokkiRegular" pointSize="22"/>
@@ -40,8 +42,11 @@
                                     <color key="titleColor" red="0.90196078431372551" green="0.27058823529411763" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="swiftTopicsButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0ur-0q-rbo"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7B-kC-l5S">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="R7B-kC-l5S">
                                 <rect key="frame" x="308" y="114" width="276" height="145"/>
                                 <color key="backgroundColor" red="0.20392156862745098" green="0.58431372549019611" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="JaapokkiRegular" family="JaapokkiRegular" pointSize="22"/>
@@ -49,8 +54,11 @@
                                     <color key="titleColor" red="0.90196078431372551" green="0.27058823529411763" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="objCTopicsButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DK7-AB-kIz"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idt-8m-OZt">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="idt-8m-OZt">
                                 <rect key="frame" x="16" y="275" width="276" height="144"/>
                                 <color key="backgroundColor" red="0.40784313725490196" green="0.69803921568627447" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="JaapokkiRegular" family="JaapokkiRegular" pointSize="22"/>
@@ -58,17 +66,23 @@
                                     <color key="titleColor" red="0.90196078431372551" green="0.27058823529411763" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="generaliOSTopicsButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="b2d-C7-Iv1"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFw-DV-qMO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="WFw-DV-qMO">
                                 <rect key="frame" x="308" y="275" width="276" height="144"/>
                                 <color key="backgroundColor" red="0.40784313725490196" green="0.69803921568627447" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="JaapokkiRegular" family="JaapokkiRegular" pointSize="22"/>
-                                <state key="normal" title="?">
+                                <state key="normal" title="Random">
                                     <color key="titleColor" red="0.90196078431372551" green="0.27058823529411763" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="randomQuestionsButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vEQ-au-en6"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Developer Interview Study Flash Cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3G-Dk-RQU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Developer Interview Study Flash Cards" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3G-Dk-RQU">
                                 <rect key="frame" x="16" y="28" width="568" height="39"/>
                                 <color key="backgroundColor" red="0.99607843137254903" green="0.98431372549019602" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="JaapokkiRegular" family="JaapokkiRegular" pointSize="25"/>
@@ -83,8 +97,11 @@
                                     <color key="titleColor" red="0.90196078431372551" green="0.27058823529411763" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="objCCodingProblemsButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4br-MK-Yx6"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jI-Ck-Rkz">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="0jI-Ck-Rkz">
                                 <rect key="frame" x="308" y="435" width="276" height="145"/>
                                 <color key="backgroundColor" red="0.69803921568627447" green="0.91764705882352937" blue="0.55686274509803924" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="JaapokkiRegular" family="JaapokkiRegular" pointSize="22"/>
@@ -92,6 +109,9 @@
                                     <color key="titleColor" red="0.90196078431372551" green="0.27058823529411763" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="swiftCodingProblemsButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vls-57-zLl"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a topic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJX-m2-tCO">
                                 <rect key="frame" x="249" y="75" width="103" height="31"/>
@@ -139,6 +159,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="9pl-Th-RzN"/>
                     <connections>
+                        <outlet property="headerLabel" destination="C3G-Dk-RQU" id="KfD-I8-l9M"/>
+                        <outlet property="pickTopicLabel" destination="fJX-m2-tCO" id="5uY-b7-Zeo"/>
                         <segue destination="tTp-EO-pM8" kind="show" identifier="SHOW_QUESTION" id="mEO-Gz-A4z"/>
                     </connections>
                 </viewController>
@@ -146,10 +168,10 @@
             </objects>
             <point key="canvasLocation" x="1617" y="291"/>
         </scene>
-        <!--View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="7ov-5I-ty8">
             <objects>
-                <viewController id="tTp-EO-pM8" sceneMemberID="viewController">
+                <viewController id="tTp-EO-pM8" customClass="QuestionViewController" customModule="iOSStudyFlashCards" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Cgg-g2-8PX"/>
                         <viewControllerLayoutGuide type="bottom" id="JM9-1g-P8s"/>
@@ -174,18 +196,33 @@
                                 <color key="textColor" red="0.90196078430000004" green="0.27058823529999998" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ZM-pb-OFy">
+                                <rect key="frame" x="532" y="28" width="52" height="43"/>
+                                <fontDescription key="fontDescription" name="JaapokkiRegular" family="JaapokkiRegular" pointSize="20"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.27058823529999998" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" identifier="SHOW_HOME" id="K61-fS-oLA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99607843139999996" green="0.98431372549999996" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="1ZM-pb-OFy" firstAttribute="top" secondItem="Cgg-g2-8PX" secondAttribute="bottom" constant="8" id="6Qa-me-S5R"/>
                             <constraint firstItem="6e3-g9-cO8" firstAttribute="top" secondItem="Cgg-g2-8PX" secondAttribute="bottom" constant="8" id="K0y-Pi-c1x"/>
                             <constraint firstItem="JM9-1g-P8s" firstAttribute="top" secondItem="5iW-Ce-fdX" secondAttribute="bottom" constant="20" id="XzG-7l-Rkd"/>
                             <constraint firstItem="5iW-Ce-fdX" firstAttribute="trailing" secondItem="dIT-ah-Q1r" secondAttribute="trailingMargin" id="iSK-Mc-FDf"/>
+                            <constraint firstItem="1ZM-pb-OFy" firstAttribute="trailing" secondItem="dIT-ah-Q1r" secondAttribute="trailingMargin" id="noe-n0-LFS"/>
                             <constraint firstItem="5iW-Ce-fdX" firstAttribute="leading" secondItem="dIT-ah-Q1r" secondAttribute="leadingMargin" id="oGg-xS-jRh"/>
                             <constraint firstItem="6e3-g9-cO8" firstAttribute="leading" secondItem="dIT-ah-Q1r" secondAttribute="leadingMargin" id="wdd-FF-M4G"/>
                             <constraint firstItem="5iW-Ce-fdX" firstAttribute="top" secondItem="6e3-g9-cO8" secondAttribute="bottom" id="x8e-Be-Ut6"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="qLabel" destination="6e3-g9-cO8" id="uMw-My-8oa"/>
+                        <outlet property="questionLabel" destination="5iW-Ce-fdX" id="8To-Ee-U8V"/>
                         <segue destination="6na-NP-eFe" kind="show" identifier="SHOW_ANSWER" id="6lH-Lw-Rwq"/>
                     </connections>
                 </viewController>
@@ -193,10 +230,10 @@
             </objects>
             <point key="canvasLocation" x="2318" y="291"/>
         </scene>
-        <!--View Controller-->
+        <!--Answer View Controller-->
         <scene sceneID="R8X-ML-JPQ">
             <objects>
-                <viewController id="6na-NP-eFe" sceneMemberID="viewController">
+                <viewController id="6na-NP-eFe" customClass="AnswerViewController" customModule="iOSStudyFlashCards" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eVb-80-HVy"/>
                         <viewControllerLayoutGuide type="bottom" id="qf0-mV-Uqt"/>
@@ -217,6 +254,22 @@
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vc6-WB-XFv">
                                 <rect key="frame" x="16" y="77" width="568" height="503"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My iOS Answers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdd-KX-qpf">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="503"/>
+                                        <fontDescription key="fontDescription" name="JaapokkiRegular" family="JaapokkiRegular" pointSize="20"/>
+                                        <color key="textColor" red="0.92941176469999998" green="0.2784313725" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="xdd-KX-qpf" firstAttribute="width" secondItem="Vc6-WB-XFv" secondAttribute="width" id="Dea-yP-WEn"/>
+                                    <constraint firstItem="xdd-KX-qpf" firstAttribute="top" secondItem="Vc6-WB-XFv" secondAttribute="top" id="Fyr-4h-W17"/>
+                                    <constraint firstAttribute="trailing" secondItem="xdd-KX-qpf" secondAttribute="trailing" id="LxE-i7-Ior"/>
+                                    <constraint firstItem="xdd-KX-qpf" firstAttribute="leading" secondItem="Vc6-WB-XFv" secondAttribute="leading" id="UgQ-2n-Ire"/>
+                                    <constraint firstItem="xdd-KX-qpf" firstAttribute="height" secondItem="Vc6-WB-XFv" secondAttribute="height" id="dT1-g6-YWs"/>
+                                    <constraint firstAttribute="bottom" secondItem="xdd-KX-qpf" secondAttribute="bottom" id="fk3-7Q-pzf"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.99607843139999996" green="0.98431372549999996" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -229,6 +282,11 @@
                             <constraint firstItem="Vc6-WB-XFv" firstAttribute="top" secondItem="IYg-So-Hz2" secondAttribute="bottom" constant="3" id="tb6-H2-I4p"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="aLabel" destination="IYg-So-Hz2" id="VoP-b7-jJe"/>
+                        <outlet property="answerLabel" destination="xdd-KX-qpf" id="8c3-j2-Ftn"/>
+                        <outlet property="answerScrollView" destination="Vc6-WB-XFv" id="Qge-if-RGF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lic-vY-NGU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

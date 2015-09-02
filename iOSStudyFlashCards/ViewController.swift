@@ -9,6 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+  
+  @IBOutlet weak var headerLabel: UILabel!
+  
+  @IBOutlet weak var pickTopicLabel: UILabel!
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -18,6 +22,26 @@ class ViewController: UIViewController {
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
+  }
+  
+
+  @IBAction func swiftTopicsButtonPressed(sender: AnyObject) {
+  }
+  
+  @IBAction func objCTopicsButtonPressed(sender: AnyObject) {
+  }
+  
+
+  @IBAction func generaliOSTopicsButtonPressed(sender: AnyObject) {
+  }
+  
+  @IBAction func randomQuestionsButtonPressed(sender: AnyObject) {
+  }
+  
+  @IBAction func objCCodingProblemsButtonPressed(sender: AnyObject) {
+  }
+  
+  @IBAction func swiftCodingProblemsButtonPressed(sender: AnyObject) {
   }
 
 
