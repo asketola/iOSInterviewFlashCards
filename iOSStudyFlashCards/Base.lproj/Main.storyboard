@@ -204,6 +204,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="homeButtonPressed:" destination="tTp-EO-pM8" eventType="touchUpInside" id="qGW-Zm-fdX"/>
                                     <segue destination="vXZ-lx-hvc" kind="show" identifier="SHOW_HOME" id="K61-fS-oLA"/>
                                 </connections>
                             </button>
