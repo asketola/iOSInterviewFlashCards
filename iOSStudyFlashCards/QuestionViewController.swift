@@ -13,6 +13,8 @@ class QuestionViewController: UIViewController {
   @IBOutlet weak var qLabel: UILabel!
   @IBOutlet weak var questionLabel: UILabel!
   
+  var questionVariable = String()
+  
   
     override func viewDidLoad() {
         super.viewDidLoad()
