@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -74,7 +74,7 @@
                                 <rect key="frame" x="308" y="275" width="276" height="144"/>
                                 <color key="backgroundColor" red="0.40784313725490196" green="0.69803921568627447" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="JaapokkiRegular" family="JaapokkiRegular" pointSize="22"/>
-                                <state key="normal" title="Random">
+                                <state key="normal" title="Swift vs Objective-C">
                                     <color key="titleColor" red="0.90196078431372551" green="0.27058823529411763" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -190,7 +190,7 @@
                                 <color key="textColor" red="0.92941176469999998" green="0.2784313725" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here is my iOS Question. Please Answer it!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5iW-Ce-fdX">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5iW-Ce-fdX">
                                 <rect key="frame" x="16" y="74" width="568" height="506"/>
                                 <fontDescription key="fontDescription" name="JaapokkiRegular" family="JaapokkiRegular" pointSize="25"/>
                                 <color key="textColor" red="0.90196078430000004" green="0.27058823529999998" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -224,7 +224,7 @@
                     <connections>
                         <outlet property="qLabel" destination="6e3-g9-cO8" id="uMw-My-8oa"/>
                         <outlet property="questionLabel" destination="5iW-Ce-fdX" id="8To-Ee-U8V"/>
-                        <segue destination="6na-NP-eFe" kind="show" identifier="SHOW_ANSWER" id="6lH-Lw-Rwq"/>
+                        <segue destination="6na-NP-eFe" kind="presentation" identifier="SHOW_ANSWER" modalTransitionStyle="crossDissolve" id="6lH-Lw-Rwq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="570-zZ-h5s" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -256,7 +256,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vc6-WB-XFv">
                                 <rect key="frame" x="16" y="77" width="568" height="503"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My iOS Answers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdd-KX-qpf">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdd-KX-qpf">
                                         <rect key="frame" x="0.0" y="0.0" width="568" height="503"/>
                                         <fontDescription key="fontDescription" name="JaapokkiRegular" family="JaapokkiRegular" pointSize="20"/>
                                         <color key="textColor" red="0.92941176469999998" green="0.2784313725" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -287,6 +287,8 @@
                         <outlet property="aLabel" destination="IYg-So-Hz2" id="VoP-b7-jJe"/>
                         <outlet property="answerLabel" destination="xdd-KX-qpf" id="8c3-j2-Ftn"/>
                         <outlet property="answerScrollView" destination="Vc6-WB-XFv" id="Qge-if-RGF"/>
+                        <segue destination="tTp-EO-pM8" kind="presentation" identifier="SHOW_QUESTION_AGAIN" modalTransitionStyle="crossDissolve" id="YDM-mj-jvo"/>
+                        <segue destination="tTp-EO-pM8" kind="presentation" identifier="SHOW_NEW_QUESTION" modalTransitionStyle="flipHorizontal" id="2i4-2N-A3i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lic-vY-NGU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -294,4 +296,7 @@
             <point key="canvasLocation" x="3017" y="291"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="YDM-mj-jvo"/>
+    </inferredMetricsTieBreakers>
 </document>

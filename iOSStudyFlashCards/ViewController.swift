@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class ViewController: UIViewController {
   
@@ -14,10 +15,10 @@ class ViewController: UIViewController {
   @IBOutlet weak var pickTopicLabel: UILabel!
   
   var typeOfQuestion = String()
+  var maxValue = UInt32()
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
   }
 
   override func didReceiveMemoryWarning() {
@@ -27,33 +28,38 @@ class ViewController: UIViewController {
   
 
   @IBAction func swiftTopicsButtonPressed(sender: AnyObject) {
-    typeOfQuestion = "swiftTopic"
+    typeOfQuestion = "SwiftTopics"
+    maxValue = 9
     performSegueWithIdentifier("SHOW_QUESTION", sender: self)
   }
   
   @IBAction func objCTopicsButtonPressed(sender: AnyObject) {
-    typeOfQuestion = "objCTopic"
+    typeOfQuestion = "ObjCTopics"
+    maxValue = 36
     performSegueWithIdentifier("SHOW_QUESTION", sender: self)
   }
   
-
   @IBAction func generaliOSTopicsButtonPressed(sender: AnyObject) {
-    typeOfQuestion = "generaliOSTopic"
+    typeOfQuestion = "GeneraliOSTopics"
+    maxValue = 51
     performSegueWithIdentifier("SHOW_QUESTION", sender: self)
   }
   
   @IBAction func randomQuestionsButtonPressed(sender: AnyObject) {
-    typeOfQuestion = "randomQuestion"
+    typeOfQuestion = "SwiftVsObjCs"
+    maxValue = 8
     performSegueWithIdentifier("SHOW_QUESTION", sender: self)
   }
   
   @IBAction func objCCodingProblemsButtonPressed(sender: AnyObject) {
-    typeOfQuestion = "objCCodingProblem"
+    typeOfQuestion = "ObjCCodingProblems"
+    maxValue = 1
     performSegueWithIdentifier("SHOW_QUESTION", sender: self)
   }
   
   @IBAction func swiftCodingProblemsButtonPressed(sender: AnyObject) {
-    typeOfQuestion = "swiftCodingProblem"
+    typeOfQuestion = "SwiftCodingProblems"
+    maxValue = 75
     performSegueWithIdentifier("SHOW_QUESTION", sender: self)
   }
   
@@ -61,6 +67,7 @@ class ViewController: UIViewController {
     if segue.identifier == "SHOW_QUESTION" {
       if let destinationVC = segue.destinationViewController as? QuestionViewController{
         destinationVC.questionVariable = typeOfQuestion
+        destinationVC.maxValue = maxValue
       }
     }
   }
